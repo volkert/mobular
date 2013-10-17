@@ -1,0 +1,25 @@
+.reveal-animation.ng-enter,
+.reveal-animation.ng-leave {
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+}
+
+.reveal-animation.ng-enter {
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+
+.reveal-animation.ng-leave {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.reveal-animation.ng-leave-active {
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+.reveal-animation.ng-enter-active {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}

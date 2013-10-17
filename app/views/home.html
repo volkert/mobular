@@ -1,0 +1,12 @@
+<input type="text" ng-model="firstname" />
+<input type="text" ng-model="lastname" />
+
+<button ng-click="addEmployee()">Add employee</button>
+
+<ul>
+  <li ng-repeat="model in models">
+    {{ model.attributes.firstname }} {{ model.attributes.lastname }}
+
+    <button style="margin-left: 10px;" ng-click="removeEmployee(model)">Delete</button>
+  </li>
+</ul>
